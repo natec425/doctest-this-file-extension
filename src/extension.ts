@@ -13,7 +13,7 @@ export function activate(context: vscode.ExtensionContext) {
 
         output.show();
         output.appendLine("Doctesting " + path);
-        exec(command, show_stdout);
+        exec(command, {timeout: 100000}, show_stdout);
 
     });
 
