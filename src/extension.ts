@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
         let pythonPath = vscode.workspace.getConfiguration("python").get("path", "python3");
         let output = vscode.window.createOutputChannel("Doctest Results: ");
         let command = [pythonPath, "-m", "doctest", path].join(" ");
-        let show_stdout = (err, stdout, stderr) => output.appendLine(stdout);
+        let show_stdout = (err, stdout, stderr) => output.appendLine(stdout + stderr);
 
         output.show();
         output.appendLine("Doctesting " + path);
