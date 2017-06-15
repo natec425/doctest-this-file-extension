@@ -2,7 +2,7 @@
     "name": "doctest-this-file",
     "displayName": "doctest-this-file",
     "description": "Doctest this file",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "natec425",
     "engines": {
         "vscode": "^1.12.0"
